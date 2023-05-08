@@ -1,10 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import FirebaseContext from './context/firebase';
+import { firebase, FeildValue } from './lib/firebase';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+root.render(
+  <FirebaseContext.Provider value={{ firebase, FeildValue}}>
+    <App/>
+  </FirebaseContext.Provider> 
+  );
 
+// ReactDOM.render(
+//   <FirebaseContext.Provider value={{ firebase, FeildValue}}>
+//     <App/>
+//   </FirebaseContext.Provider>, 
+//   ReactDOM.createRoot(document.getElementById('root')
+//   ));
 //client side rendered app: react(cra)
   // -> database which is Firebase
   // -> react-loading-skeleton
