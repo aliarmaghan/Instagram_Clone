@@ -2,8 +2,8 @@ import Firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
 
-
 // here i want to import the seed file
+//import { seedDatabase  } from '../seed';
 
 const config = {apiKey: "AIzaSyAc7OlqHIzV7H0TxzywD9gs7ippZjbAmvM",
 authDomain: "instagram-clone-7de5a.firebaseapp.com",
@@ -17,5 +17,6 @@ const { FeildValue } = Firebase.firestore;
 
 //here is where I want to call the seed file(only ONCE!)
 //seedDatabase(firebase);
+
 
 export {firebase, FeildValue};
