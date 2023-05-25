@@ -12,12 +12,19 @@ root.render(
   </FirebaseContext.Provider> 
   );
 
+
+
+
+
+
 // ReactDOM.render(
 //   <FirebaseContext.Provider value={{ firebase, FeildValue}}>
 //     <App/>
 //   </FirebaseContext.Provider>, 
 //   ReactDOM.createRoot(document.getElementById('root')
 //   ));
+
+
 //client side rendered app: react(cra)
   // -> database which is Firebase
   // -> react-loading-skeleton
