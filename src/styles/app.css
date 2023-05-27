@@ -560,6 +560,9 @@ video {
 .w-full {
   width: 100%;
 }
+.w-20 {
+  width: 5rem;
+}
 .max-w-screen-lg {
   max-width: 1024px;
 }
@@ -568,6 +571,9 @@ video {
 }
 .cursor-pointer {
   cursor: pointer;
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -580,6 +586,9 @@ video {
 }
 .justify-between {
   justify-content: space-between;
+}
+.gap-4 {
+  gap: 1rem;
 }
 .rounded {
   border-radius: 0.25rem;
